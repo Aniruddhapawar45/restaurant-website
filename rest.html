@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS Marriot Delights - Fine Dining Experience</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Loading Screen (optional) -->
+    <div id="loading-screen">
+        <div class="loader">
+            <i class="fas fa-utensils"></i>
+            <p>Loading AS Marriot Delights...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-utensils"></i>
+                AS Marriot Delights
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to AS Marriot Delights</h1>
+            <p class="hero-subtitle">Experience culinary excellence in every bite</p>
+            <button class="cta-button" id="reserveBtn">Make a Reservation</button>
+        </div>
+        <div class="hero-image">
+            <div class="food-placeholder">🍽️</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Us</h2>
+                <p>Crafting exceptional dining experiences since 2010</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>At AS Marriot Delights, we believe that great food brings people together. Our journey began with a simple vision: to create a dining experience that combines traditional flavors with modern culinary techniques.</p>
+                    <p>Our award-winning chefs use only the finest ingredients, sourced locally whenever possible, to create dishes that not only taste exceptional but also tell a story.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h4>13+</h4>
+                            <p>Years of Excellence</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>50+</h4>
+                            <p>Signature Dishes</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4>1000+</h4>
+                            <p>Happy Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="chef-placeholder">👨‍🍳</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Menu</h2>
+                <p>Discover our carefully crafted dishes</p>
+            </div>
+            <div class="menu-tabs">
+                <button class="tab-button active" data-tab="starters">Starters</button>
+                <button class="tab-button" data-tab="mains">Main Course</button>
+                <button class="tab-button" data-tab="desserts">Desserts</button>
+                <button class="tab-button" data-tab="beverages">Beverages</button>
+            </div>
+            <div class="menu-content">
+                <div class="tab-content active" id="starters">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">🥗</div>
+                            <div class="menu-info">
+                                <h4>Caesar Salad Supreme</h4>
+                                <p>Crisp romaine lettuce with our signature dressing</p>
+                                <span class="price">1259.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🍤</div>
+                            <div class="menu-info">
+                                <h4>Grilled Shrimp Cocktail</h4>
+                                <p>Fresh shrimp with tangy cocktail sauce</p>
+                                <span class="price"> 1669.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🧀</div>
+                            <div class="menu-info">
+                                <h4>Artisan Cheese Board</h4>
+                                <p>Selection of fine cheeses with crackers and fruits</p>
+                                <span class="price">2499.99 RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="mains">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">🥩</div>
+                            <div class="menu-info">
+                                <h4>Ribeye Steak</h4>
+                                <p>Perfectly seared ribeye with garlic butter</p>
+                                <span class="price">4999.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🍝</div>
+                            <div class="menu-info">
+                                <h4>Truffle Pasta</h4>
+                                <p>Handmade pasta in creamy truffle sauce</p>
+                                <span class="price">2444.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🐟</div>
+                            <div class="menu-info">
+                                <h4>Grilled Salmon</h4>
+                                <p>Served with lemon dill sauce & seasonal veg</p>
+                                <span class="price">3279.99 RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="desserts">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">🍰</div>
+                            <div class="menu-info">
+                                <h4>Classic Cheesecake</h4>
+                                <p>Smooth and creamy with berry compote</p>
+                                <span class="price">999.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🍮</div>
+                            <div class="menu-info">
+                                <h4>Crème Brûlée</h4>
+                                <p>Caramelized top with vanilla bean custard</p>
+                                <span class="price">889.99 RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" id="beverages">
+                    <div class="menu-grid">
+                        <div class="menu-item">
+                            <div class="menu-image">☕</div>
+                            <div class="menu-info">
+                                <h4>Espresso</h4>
+                                <p>Rich and strong single shot</p>
+                                <span class="price">399.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🍷</div>
+                            <div class="menu-info">
+                                <h4>Fine Wine (Red / White)</h4>
+                                <p>Selection from our cellar</p>
+                                <span class="price">1299.99 RS</span>
+                            </div>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-image">🥂</div>
+                            <div class="menu-info">
+                                <h4>Sparkling Water</h4>
+                                <p>Chilled with a slice of lemon</p>
+                                <span class="price">299.99 RS</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">A glimpse of what awaits you</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-image">🍽️</div>
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🍰</div>
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🍷</div>
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-image">🥂</div>
+                    <div class="gallery-overlay"><i class="fas fa-search-plus"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Guests Say</h2>
+                <p>Feedback from those who have dined with us</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonial-item active">
+                    <div class="stars">★★★★★</div>
+                    <div class="testimonial-content">
+                        <p>"Absolutely wonderful experience! The flavors, atmosphere, service—everything was top notch."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Shruti Wankhede</strong>
+                        <span>Food Enthusiast</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">★★★★☆</div>
+                    <div class="testimonial-content">
+                        <p>"A beautiful ambiance and the food was incredible. Will definitely return."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Soham pote</strong>
+                        <span>Frequent Diner</span>
+                    </div>
+                </div>
+                <div class="testimonial-item">
+                    <div class="stars">★★★★☆</div>
+                    <div class="testimonial-content">
+                        <p>"A beautiful ambiance and the food was incredible. Will definitely return."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <strong>Sahil shinde</strong>
+                        <span>Frequent Diner</span>
+                    </div>
+                </div>
+                <!-- Add more testimonial-item blocks as desired -->
+
+                <div class="testimonial-nav">
+                    <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="testimonial-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <!-- one dot per testimonial-item -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>We’d love to hear from you</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Amenora Avenue, Food City, Pune 40041</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 (234)567‑890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@ASmarriotdelights.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Modal -->
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Make a Reservation</h3>
+                <span class="close-modal">&times;</span>
+            </div>
+            <div class="reservation-form">
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-name">Name</label>
+                            <input type="text" id="res-name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-email">Email</label>
+                            <input type="email" id="res-email" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="res-date">Date</label>
+                            <input type="date" id="res-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="res-time">Time</label>
+                            <input type="time" id="res-time" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="res-people">Number of People</label>
+                        <select id="res-people" required>
+                            <option value="">Select</option>
+                            <option value="1">1 Person</option>
+                            <option value="2">2 People</option>
+                            <option value="3">3 People</option>
+                            <option value="4">4 People</option>
+                            <option value="5">5 People</option>
+                            <option value="6+">6+ People</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="submit-btn">Reserve</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top"><i class="fas fa-chevron-up"></i></button>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-section">
+                <h4>About</h4>
+                <p>We believe in exceptional cuisine, unforgettable service, and a warm atmosphere. Savory Delights is where every dish tells a story.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Newsletter</h4>
+                <p>Sign up to get the latest on specials & events</p>
+                <form class="newsletter-form" action="#" method="post">
+                    <input type="email" placeholder="Your Email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 AS Marriot Delights. All rights reserved.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
